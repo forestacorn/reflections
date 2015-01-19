@@ -1,0 +1,13 @@
+Lesson 2 Reflections
+=====================
+
+
+19th Jan 2015
+
+git init is used to initialise a directory for Git use. It does not create any commits when doing so, you have to create the first commit and add the files to track.
+
+
+Q. What happens when you initialize a repository? Why do you need to do it?
+
+A. A hidden .git directory is created containing the infrastructure required for using Git. It's needed for all the functions that Git performs.
+

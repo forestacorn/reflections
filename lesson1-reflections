@@ -1,0 +1,65 @@
+
+5th Jan 2015
+Q. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+A. 'diff' shows changed lines between two files,
+- : removed lines
++ : added lines
+the old and new lines appear next to each other easing the comparison by eye.
+
+
+Q. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+A. Reminding you of useful pieces of code and methods that you may have forgotten and would like or need to use again.
+
+
+7th Jan 2015
+Q. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+A. A manual choice tends to be done at logical boundaries, automatic at arbitrary change points.
+
+
+Q. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+A. With GIT it is likely the files are interrelated, a change in one relates to changes in others. Google docs is a general purpose system for non-specialist users.
+
+
+Q. How can you use the commands git log and git diff to view the history of files?
+
+A. git log --stat -i --grep=revert
+is an easy way otherwise use 
+'git log'
+to look at the commit logs and get their id's then use 
+'git diff firstID secondID'
+to display their differences.
+
+
+commit df035382c41b4d0cda86a1aa30b53f15bef05b53
+Author: Doug McInnes <doug@dougmcinnes.com>
+Date:   Tue May 25 22:18:23 2010 -0700
+
+    I can't spell 'screen' apparently :)
+
+commit b0678b161fcf74467ed3a63110557e3d6229cfa6
+Author: cbuckey <caroline@udacity.com>
+Date:   Mon May 24 04:15:21 2010 -0700
+
+    Revert controls
+
+commit f19cb1b80fe27e938e4d72770ca0a42f25e99ecc
+Author: cbuckey <caroline@udacity.com>
+Date:   Mon May 24 04:03:05 2010 -0700
+
+    Fix typo in space
+
+    
+12th Jan 2015
+Q. How might using version control make you more confident to make changes that could break something?
+
+A. Using a combination of 'git log' and 'git checkout idnumber' one can revert to a previous version of code files if recent changes are not desired.
+
+
+13th Jan 2015
+Q. Now that you have your workspace set up, what do you want to try using Git for?
+
+A. I would like to begin using it for the rare occasions when I develop program code, soon that may be for the PyBoard. Also I suspect it may have other good uses, perhaps when writing documentation etc.
