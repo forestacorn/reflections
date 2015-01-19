@@ -11,3 +11,12 @@ Q. What happens when you initialize a repository? Why do you need to do it?
 
 A. A hidden .git directory is created containing the infrastructure required for using Git. It's needed for all the functions that Git performs.
 
+
+Git has a working directory and a staging area.
+
+
+Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A. Staging area is like a preparatory area prior to committing changes.
+It offers a changes to review changes prior to commitment?
+
