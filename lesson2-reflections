@@ -18,5 +18,31 @@ Git has a working directory and a staging area.
 Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 A. Staging area is like a preparatory area prior to committing changes.
-It offers a changes to review changes prior to commitment?
+It offers a chance to review changes prior to commitment?
 
+
+git diff    view differences between the working directory and staged. 
+git diff --staged    differences between staged and commit.
+
+
+21st Jan 2015
+
+Q. How can you use the staging area to make sure you have one commit per logical change?
+
+A. Files are added to the staging area using:
+git add filename
+then after one is happy with the logical changes made to the file it can be committed:
+git commit
+an editor is then opened so a commit message/description may be given. The process of add and commit can be repeated for each file.
+
+22nd Jan 2015
+Q. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A. When something new is being tried, branch in a new direction, whilst preserving the original development path.
+
+Display branches:
+git branch
+Create a new branch:
+git branch branchname
+To switch to a branch:
+git checkout branchname
