@@ -21,8 +21,8 @@ A. Staging area is like a preparatory area prior to committing changes.
 It offers a chance to review changes prior to commitment?
 
 
-git diff    view differences between the working directory and staged. 
-git diff --staged    differences between staged and commit.
+git diff    # view differences between the working directory and staged. 
+git diff --staged    # differences between staged and commit.
 
 
 21st Jan 2015
@@ -40,9 +40,26 @@ Q. What are some situations when branches would be helpful in keeping your histo
 
 A. When something new is being tried, branch in a new direction, whilst preserving the original development path.
 
-Display branches:
-git branch
-Create a new branch:
-git branch branchname
-To switch to a branch:
-git checkout branchname
+
+git branch   # Display branches
+
+git branch branchname   # Create a new branch
+
+git checkout branchname   # To switch to a branch
+
+git branch -d branchname   # deletes a branch
+
+
+Q. How do the diagrams help you visualize the branch structure?
+
+A. Can see when, where and what branches were created.
+
+
+git merge branchName   # as necessary ensure git checkout is used for correct merge
+
+git show   # displays content changes of merged branches.
+
+
+26th Jan 2015
+
+git log --graph --oneline
