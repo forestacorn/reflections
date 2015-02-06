@@ -6,6 +6,8 @@ Lesson 2 Reflections
 
 git init is used to initialise a directory for Git use. It does not create any commits when doing so, you have to create the first commit and add the files to track.
 
+The initial repository has no commits so 'git log' will display an error message to that effect. 'git status' displays info on the files in the git repository.
+
 
 Q. What happens when you initialize a repository? Why do you need to do it?
 
@@ -13,6 +15,8 @@ A. A hidden .git directory is created containing the infrastructure required for
 
 
 Git has a working directory and a staging area.
+git add filename   # adds files to the staging area
+                   # prior to them being committed to log the changes.
 
 
 Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
@@ -24,16 +28,25 @@ It offers a chance to review changes prior to commitment?
 git diff    # view differences between the working directory and staged. 
 git diff --staged    # differences between staged and commit.
 
+git checkout master  # fixes the initial 'detached head' state.
+
 
 21st Jan 2015
 
 Q. How can you use the staging area to make sure you have one commit per logical change?
 
 A. Files are added to the staging area using:
+
 git add filename
+
 then after one is happy with the logical changes made to the file it can be committed:
+
 git commit
-an editor is then opened so a commit message/description may be given. The process of add and commit can be repeated for each file.
+
+an editor is then opened so a commit message/description may be given. The process of add and commit can be repeated for each file. Or:
+
+git commit -m "descriptive commit message here."
+
 
 22nd Jan 2015
 Q. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
@@ -47,7 +60,11 @@ git branch branchname   # Create a new branch
 
 git checkout branchname   # To switch to a branch
 
-git branch -d branchname   # deletes a branch
+git checkout -b newBranchName   # Creates a new branch and switches to it.
+
+git branch -d branchname   # deletes a branch, perhaps after merging.
+
+Each commit has a parent and parent id, except for the first commit, and each parent  may have children with id's unless the parent is the head of a branch.
 
 
 Q. How do the diagrams help you visualize the branch structure?
@@ -59,7 +76,14 @@ git merge branchName   # as necessary ensure git checkout is used for correct me
 
 git show   # displays content changes of merged branches.
 
+git show commitID   # shows differences from parent.
+
 
 26th Jan 2015
 
-git log --graph --oneline
+git log --graph --oneline branchName1 branchName2   # etc.
+
+
+6th Feb 2015
+
+
