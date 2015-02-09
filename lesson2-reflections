@@ -84,6 +84,19 @@ git show commitID   # shows differences from parent.
 git log --graph --oneline branchName1 branchName2   # etc.
 
 
-6th Feb 2015
+9th Feb 2015
+
+Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A. Automatic merges are fine when there are no conflicts in the code, however manual intervention is required  when there are conflicts. eg.:
+
+$ git merge master easy-mode                                  
+Auto-merging game.js                                                                                                                 
+CONFLICT (content): Merge conflict in game.js                                                                                        
+Automatic merge failed; fix conflicts and then commit the result.
+
+manually edit the file to fix the conflicts then 'add' and 'commit' the changes.
+
+Merging 'master' into the branch you are working should be done regularly to minimise the work required.
 
 
