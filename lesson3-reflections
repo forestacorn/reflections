@@ -1,0 +1,6 @@
+10th Feb. 2015
+
+Caching your GitHub password in Git (see help.github.com):
+
+git config --global credential.helper cache
+# Set git to use the credential memory cache
