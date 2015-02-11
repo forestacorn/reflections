@@ -4,3 +4,7 @@ Caching your GitHub password in Git (see help.github.com):
 
 git config --global credential.helper cache
 # Set git to use the credential memory cache
+
+After creating a new GitHub repository on GitHub called 'reflections':
+git remote add origin git@github.com:forestacorn/reflections.git
+git remote -v   # verbose info about GitHub repository.
