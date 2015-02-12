@@ -28,8 +28,8 @@ A. Automatic updates may make undersired changes and result in numerous merge ed
 Q. Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-Forks:  Done via the GitHub website to create a copy (fork) into your repository of a repository not owned by you.
-Clones:  Clones, ie. copies, a remote repository to your local computer.
+Forks:  Done via the GitHub website to create a copy (fork) into your GitHub repository of a repository not owned by you.
+Clones:  Clones, ie. copies, a remote repository to your local computer, so you do not have to be 'online' to edit.
 Branches:  Either remotely or locally, to try somethng new without messing up the existing branch.
 
 
