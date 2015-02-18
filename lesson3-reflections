@@ -48,6 +48,14 @@ stored locally?
 
 A. To be aware of the effect that local changes will have on the remote.
 
+## Pull Request example:
+git branch different-oil    # create a new local branch
+git checkout different-oil   # work on that branch
+git add cake-recipe.txt     # then make changes to the local file
+git commit -m 'oil change'   
+git push origin different-oil   # send the changes to GitHub
+# the changes may now be viewed on GitHub and acted upon.
+
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
