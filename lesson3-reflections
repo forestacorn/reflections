@@ -63,9 +63,11 @@ and what would be harder?
 A. Perhaps try discussion by email and possibly edit shared files - but this leads to contention over different ways of doing things.
 
 
-When would you want to make changes in a separate branch rather than directly in
+Q. When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+A. I've got a little confused at this part of the course so may answer may not be correct or relevant, however:
+Make changes in a separate branch to experiment or propose changes and in the master branch for 'normal' changes(?).
+With the benefit of not having confusing changes in either branch(?).
 
     
